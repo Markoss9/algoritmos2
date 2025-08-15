@@ -4,17 +4,17 @@ from Ejercicio3 import*
 def insertAVL(T, element, key):
     """
     Inserta un nodo en un árbol AVL y mantiene el balance.
-    T: AVLTree
+    T: AVLTreegit push
     element: valor del nodo
     key: clave del nodo
     """
-    # 1️⃣ Crear nodo nuevo
+    # 1️Crear nodo nuevo
     nuevo = AVLNode()
     nuevo.key = key
     nuevo.value = element
     nuevo.bf = 0
 
-    # 2️⃣ Insertar como en un BST normal
+    # 2️ Insertar como en un BST normal
     if T.root is None:
         T.root = nuevo
         return key
@@ -40,7 +40,7 @@ def insertAVL(T, element, key):
 
     insert_rec(T.root)
 
-    # 3️⃣ Rebalancear todo el árbol
+    # 3️ Rebalancear todo el árbol
     reBalance(T)
 
     return key
