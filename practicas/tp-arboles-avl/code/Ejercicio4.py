@@ -44,6 +44,7 @@ def insertAVL(T, element, key):
     reBalance(T)
 
     return key
+
 # Crear un AVL vacío
 T = AVLTree()
 
