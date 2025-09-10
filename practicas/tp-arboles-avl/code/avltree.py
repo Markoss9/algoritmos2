@@ -1,5 +1,9 @@
 from algo1 import *
 
+# Definición del árbol binario
+class BinaryTree:
+    root = None
+
 # Definición de nodo del árbol binario
 class BinaryTreeNode:
     key = None
@@ -7,10 +11,6 @@ class BinaryTreeNode:
     leftnode = None
     rightnode = None
     parent = None
-
-# Definición del árbol binario
-class BinaryTree:
-    root = None
 
 # Operación: search(B, element)
 def search(B, element):

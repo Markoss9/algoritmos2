@@ -9,7 +9,7 @@ def calculateBalance(T):
     def altura(node):
         if node is None:
             return -1  # Árbol vacío tiene altura -1
-        return 1 + max(altura(node.leftnode), altura(node.rightnode))
+        return 1 + max(altura(node.leftnode), altura(node.rightnode))   # Altura del nodo de forma recursiva
 
     def calcular(node):
         if node is None:
