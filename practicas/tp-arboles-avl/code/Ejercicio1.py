@@ -79,3 +79,4 @@ rotateRight(T, n1)
 print("Raíz después de rotar:", T.root.key)  # → 20
 print("Hijo izquierdo de la raíz:", T.root.leftnode.key)  # → 10
 print("Hijo derecho de la raíz:", T.root.rightnode.key)  # → 30
+
