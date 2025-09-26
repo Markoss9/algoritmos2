@@ -1,4 +1,5 @@
 from trie import *
+
 def find_node(self, prefix):
         """Devuelve el nodo final del prefijo, o None si no existe"""
         node = self.root

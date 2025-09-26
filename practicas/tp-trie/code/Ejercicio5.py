@@ -19,7 +19,6 @@ class TrieComparator:
         dfs(trie.root, [])
         return result
 
-
     def same_document(T1, T2):
         """Devuelve True si ambos tries representan el mismo documento"""
         palabras_T1 = TrieComparator.get_all_words(T1)
