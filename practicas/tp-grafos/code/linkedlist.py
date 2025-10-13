@@ -107,3 +107,24 @@ def printList(linkedList):
         print(current.value, end=" -> ")
         current = current.nextNode
     print("None")
+
+from linkedlist import LinkedList, add, search, delete, insert, printList, length
+
+L = LinkedList()
+add(L, "A")
+add(L, "B")
+add(L, "C")
+
+print("Lista inicial:")
+printList(L)
+
+print("Posición de 'B':", search(L, "B"))
+print("Longitud:", length(L))
+
+insert(L, "X", 1)
+print("Después de insertar 'X' en posición 1:")
+printList(L)
+
+delete(L, 2)
+print("Después de eliminar posición 2:")
+printList(L)
